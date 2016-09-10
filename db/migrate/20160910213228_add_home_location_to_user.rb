@@ -1,0 +1,5 @@
+class AddHomeLocationToUser < ActiveRecord::Migration
+  def change
+  	  	add_column :users, :home_location, :string
+  end
+end

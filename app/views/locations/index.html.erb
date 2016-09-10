@@ -1,0 +1,25 @@
+<div class="container-fluid">
+	<br>
+	<br>	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<% @locations.each do |location| %>
+				<div class="col-md-4">
+					<img src="<%= location.img_url %>" width="200px" height="200px">
+				</div>
+				<div class="col-md-8 well">
+					<h2><%= location.name %></h2>
+
+					<h4>
+						Address: <%= location.address %>
+					</h4>
+					<div class="text-center">
+
+					</div>
+				</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>
