@@ -10,10 +10,11 @@ locations = Location.create([
 {
    name:"Alcatraz Island",
    address:"Alcatraz Island San Francisco, CA 94133",
-   img_url: 'image_1.jpeg'
+   img_url: 'image_1.jpeg',
+   map_url: 'https://www.google.com/maps/place/Alcatraz+Island/@37.8269775,-122.4251442,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xd15844a27f9a58a5!8m2!3d37.8269775!4d-122.4229555',
    },
 {
-   name:"Fisherma's Wharf",
+   name:"Fisherman's Wharf",
    address:"Fisherman's Wharf, San Francisco, CA ",
    img_url: 'image_2.jpg'  
    },

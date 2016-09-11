@@ -1,5 +1,6 @@
-<div class="container-fluid">
+<div class="container-fluid text-center">
 	<h2>Location Feed</h2>
+	<iframe src="https://www.google.com/maps/d/embed?mid=1xzgcBs9jwqW1rxeZOV2x_afYIso" width="640" height="480"></iframe>
 	<% @locations.each do |location| %>
 		<div class="row">
 			<div class="col-md-12 location">
@@ -11,6 +12,7 @@
 					<h4>
 						Address: <%= location.address %>
 					</h4>
+					<h4><a href="<%= location.map_url %>">VIEW IN GOOGLE MAPS</a></h4>
 				</div>
 				<% end %>
 			</div>

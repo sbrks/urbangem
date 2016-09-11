@@ -29,6 +29,23 @@ label {
   font-family: 'Lato', sans-serif;
 }
 
+a.button {
+	color:white;
+}
+
 .location {
-	border: 1px solid black;
+
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 80px;
+  padding: 0px;
+
+}
+
+.example2 .navbar-brand>img {
+  padding: 0px 15px;
 }
