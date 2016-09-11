@@ -1,6 +1,7 @@
 <div class="container-fluid text-center">
-	<h2>Location Feed</h2>
-	<iframe src="https://www.google.com/maps/d/embed?mid=1xzgcBs9jwqW1rxeZOV2x_afYIso" width="640" height="480"></iframe>
+	<h1>Location Feed</h1>
+		<iframe src="https://www.google.com/maps/d/embed?mid=1xzgcBs9jwqW1rxeZOV2x_afYIso" width="640" height="480"></iframe>
+
 	<% @locations.each do |location| %>
 		<div class="row">
 			<div class="col-md-12 location">
@@ -10,8 +11,14 @@
 				<div class="col-md-8">
 					<h2><%= location.name %></h2>
 					<h4>
-						Address: <%= location.address %>
+						Location: <%= location.address %>
 					</h4>
+					<h4>
+						Tags: <%= location.tags %>
+					</h4>
+					<div class="btn btn-primary">
+						 <%= link_to "VIEW", location_path(location), style:"color:white"%>
+					</div>
 					<h4><a href="<%= location.map_url %>">VIEW IN GOOGLE MAPS</a></h4>
 				</div>
 				<% end %>

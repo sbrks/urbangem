@@ -1,16 +1,49 @@
+<div class="container-fluid text-center">
 <%= form_for :location, url: locations_path do |f| %>
 
-  <p>
+  <h3>
     <%= f.label :name %><br>
     <%= f.text_field :name %>
-  </p>
- 
-  <p>
-    <%= f.label :address %><br>
+  </h3>
+
+  <h3>
+    <%= f.label :location %><br>
     <%= f.text_area :address %>
-  </p>
+  </h3>
+
+  <h3>
+    <%= f.label :tags%><br>
+    <%= f.text_field :tags%>
+  </h3>
+
+  <h3>
+    <%= f.label :img_URL %><br>
+    <%= f.text_area :img_url %>
+  </h3>
  
-  <p>
+  <h3>
     <%= f.submit %>
-  </p>
+  </h3>
 <% end %>
+<div class="photo"> 
+ <video autoplay="true" id="videoElement">
+    </video>
+</div>
+<script>
+ var video = document.querySelector("#videoElement");
+ 
+navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
+ 
+if (navigator.getUserMedia) {       
+    navigator.getUserMedia({video: true}, handleVideo, videoError);
+}
+ 
+function handleVideo(stream) {
+    video.src = window.URL.createObjectURL(stream);
+}
+ 
+function videoError(e) {
+    // do something
+}
+</script>
+ </div>

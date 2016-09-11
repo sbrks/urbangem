@@ -4,6 +4,9 @@ class WelcomeController < ApplicationController
 
   def landing
   	render :home
+  end
 
+  def users
+  	@users = User.all
   end
 end

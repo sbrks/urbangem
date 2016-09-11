@@ -8,7 +8,9 @@
 
      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Lato" rel="stylesheet">
 </head>
+
 <body>
+
   <nav class="navbar navbar-default example2">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -18,14 +20,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/landing"><img src="logo.png">
-        </a>
+        <a href="/"><img src="logo.png" width="200px"></a>
+        
       </div>
       <div id="navbar2" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li class="active"><a href="/">HOME</a></li>
+          <li><a href="/locations">FEED</a></li>
+          <li><a href="/users">LEADERBOARD</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">WELCOME, STEPH!<span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
@@ -36,13 +38,31 @@
           </li>
         </ul>
       </div>
-      <!--/.nav-collapse -->
-    </div>
-    <!--/.container-fluid -->
+
   </nav>
-
-
 <%= yield %>
 
+     <div class="col-xs-3 text-center">
+        <%= fa_icon "line-chart", class:"fa-4x" %><br>
+        <%= link_to "TRENDING", locations_path, class: "btn" %>
+      </div>
+
+       <div class="col-xs-3 text-center">
+        <%= fa_icon "map-marker", class:"fa-4x" %><br>
+        <%= link_to "FEED", locations_path, class: "btn" %>
+      </div>
+
+      <div class="col-xs-3 text-center">
+          <%= fa_icon "camera-retro 2x", class:"fa-4x"%><br>
+        <%= link_to "POST", new_location_path, class: "btn" %>
+      </div>
+
+      <div class="col-xs-3 text-center">
+        <%= fa_icon "user", class:"fa-4x" %><br>
+        <%= link_to "PROFILE", '/users/1', class: "btn" %>
+      </div>
+
+
+</div>
 </body>
 </html>

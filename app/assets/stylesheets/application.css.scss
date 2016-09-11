@@ -36,16 +36,20 @@ a.button {
 .location {
 
 }
-
 .navbar-brand {
   padding: 0px;
 }
 .navbar-brand>img {
-  height: 80px;
-  padding: 0px;
+  height: 100px;
+  width:320px;
 
+}
+
+.navbar-brand a{
+	line-height:100%;
 }
 
 .example2 .navbar-brand>img {
-  padding: 0px 15px;
+  // padding: 7px 15px;
 }
+
