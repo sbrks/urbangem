@@ -9,14 +9,14 @@ class LocationsController < ApplicationController
 	end
 
 	def show
+		@location = Location.find(params[:id])
 	end
 
 	def create
-		@location = Location.new(params[:location])
+		location_params = params.require(:location).permit(:name, :address, :img_url)
+		@location = Location.new(location_params)
 		@location.save
 		redirect_to @location
 	end
-
-
 
 end

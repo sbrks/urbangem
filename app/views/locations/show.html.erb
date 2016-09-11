@@ -1,1 +1,32 @@
-show.html.erb 
+<div class="container">
+	<div class="row">
+		<div class="col-md-9">
+			<div class="workshop-box center-block">
+				<%= image_tag @location.img_url, class: "img-responsive workshop-img" %>
+				<h2><%= @location.name %></h2>
+				<h4>
+					<span class="h4-big">Address <%= @location.address %></span><br class="br-big">
+					
+					</h4>
+				</div>
+			</div>
+			</div>
+
+			<div class="col-xs-2">
+	    	<button type="button">Feed</button>
+	    </div>
+	    <div class="col-xs-2">
+	    	<button type="button">Trending</button>
+	    </div> 
+	    <div class="col-xs-4">
+	    	<button type="button">Post</button>
+	    </div>
+	    <div class="col-xs-2">
+	    	<button type="button">Profile</button>
+	    </div>
+	    <div class="col-xs-2">
+	    	<button type="button">Leaderboard</button>
+	    </div>
+
+	    
+			</div>

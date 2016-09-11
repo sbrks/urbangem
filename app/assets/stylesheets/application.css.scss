@@ -14,3 +14,21 @@
  *= require_self
  */
 
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  font-size:48px;
+}
+
+label {
+  font-family: 'Lato', sans-serif;
+}
+
+.location {
+	border: 1px solid black;
+}

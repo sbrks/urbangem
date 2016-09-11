@@ -1,4 +1,5 @@
-<%= form_for :location do |f| %>
+<%= form_for :location, url: locations_path do |f| %>
+
   <p>
     <%= f.label :name %><br>
     <%= f.text_field :name %>

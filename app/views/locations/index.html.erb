@@ -1,25 +1,18 @@
 <div class="container-fluid">
-	<br>
-	<br>	
-	<div class="container">
+	<h2>Location Feed</h2>
+	<% @locations.each do |location| %>
 		<div class="row">
-			<div class="col-md-12">
-				<% @locations.each do |location| %>
+			<div class="col-md-12 location">
 				<div class="col-md-4">
-					<img src="<%= location.img_url %>" width="200px" height="200px">
+				<img src="<%= location.img_url %>" width="300px" height="300px">
 				</div>
-				<div class="col-md-8 well">
+				<div class="col-md-8">
 					<h2><%= location.name %></h2>
-
 					<h4>
 						Address: <%= location.address %>
 					</h4>
-					<div class="text-center">
-
-					</div>
 				</div>
 				<% end %>
 			</div>
 		</div>
 	</div>
-</div>
