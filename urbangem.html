@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>UrbanGem</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <style type="text/css">
+			body{
+				text-align: center;
+			}
+
+#container {
+   
+    width: 100%;
+    height: auto;
+    border: 10px #333 solid;
+}
+#videoElement {
+    width: 100%;
+    height: auto;
+    background-color: #666;
+}
+</style>
+	
+</head>
+<body>
+
+ <div class="container-fluid">
+ 
+    <div class="app-header col-xs-4">
+      <button type="button" <i class="glyphicon glyphicon-chevron-left fa-lg"> </i> </button>
+    </div>
+    <div class="col-xs-4">
+    	Photo
+    </div>
+    <div class ="col-xs-4">
+      <button type="button"> <i class="glyphicon glyphicon-share fa-lg"> </i> </button>
+    </div>
+
+<div class="photo"> 
+ <video autoplay="true" id="videoElement">
+    </video>
+</div>
+<script>
+ var video = document.querySelector("#videoElement");
+ 
+navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
+ 
+if (navigator.getUserMedia) {       
+    navigator.getUserMedia({video: true}, handleVideo, videoError);
+}
+ 
+function handleVideo(stream) {
+    video.src = window.URL.createObjectURL(stream);
+}
+ 
+function videoError(e) {
+    // do something
+}
+</script>
+ </div>
+
+ <div class="col-xs-6">
+   <button type="button" <i class="fa fa-camera fa-lg"> </i> </button></div>
+
+   <div class="col-xs-6">
+   <button type="button" <i class="fa fa-map-marker fa-lg"> </i> </button>
+   </div>
+
+</body>
+</html>
+
