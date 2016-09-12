@@ -12,3 +12,10 @@ We developed Urbangem in order to engage San Franciscans in the art and architec
 - Google Maps API
 
 ##Team
+
+##To Use
+- 'git clone' this repository
+- 'cd' into 'app' directory
+- From the command line, run 'bundle install' to install all the app's dependencies
+- From the command line, run 'rails s' to run local server at localhost:3000
+- Head to localhost:30000 in your browser and have a look around!
