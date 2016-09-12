@@ -6,7 +6,7 @@ Welcome to Urbangem! Urbangem is a full stack Rails applications designed and bu
 We developed Urbangem in order to engage San Franciscans in the art and architecture scene of their city. Users can discover architectural and artistic gems around them, post photos of their findings, and follow other users to get inspired to get out and discover more of what San Francisco has to offer.
 
 
-![alt text](https://cloud.githubusercontent.com/assets/13695123/18447954/a9606d22-78dd-11e6-9a60-0f965cb6df3a.jpg | width=400)
+![alt text](https://cloud.githubusercontent.com/assets/13695123/18447954/a9606d22-78dd-11e6-9a60-0f965cb6df3a.jpg)
 
 
 
