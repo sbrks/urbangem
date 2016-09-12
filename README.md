@@ -22,7 +22,6 @@ We developed Urbangem in order to engage San Franciscans in the art and architec
 - Javascript, HTML, CSS Bootstrap
 - Google Maps API
 
-##Team
 
 ##To Use
 - 'git clone' this repository
