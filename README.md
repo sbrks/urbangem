@@ -3,7 +3,7 @@
 ## Intro
 Welcome to Urbangem! Urbangem is a full stack Rails applications designed and built in one day at Dev Bootcamp's All Women's Hackathon. 
 
-We developed Urbangem in order to engage San Franciscans in the art and architecture scene of their city. Users can discover architectural and artistic gems around them, post photos of their findings, and follow other users to get inspired to get out and discover more of what San Francisco has to offer.
+We developed Urbangem in order to engage San Franciscans in the art and architecture scene of their city. Users can discover architectural and artistic gems around them, post photos of their findings, and follow other users to get inspired to get out and discover more of what San Francisco has to offer. Urbangem is a game designed to get people out and about, engaged with the built environment surrounding them.
 
 
 ![alt text](https://cloud.githubusercontent.com/assets/13695123/18448313/77887bda-78df-11e6-9501-b8eb720e35f0.png)
